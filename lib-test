@@ -7,6 +7,8 @@ z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
 
 sayHello 'lili'
 sayHello()
+
+sayHello.parallelize(2)
 node() {
     stage('prepare') {
     
