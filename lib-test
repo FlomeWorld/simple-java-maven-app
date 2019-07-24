@@ -2,8 +2,8 @@
 library 'libtest'
 def a = new pa.al.Point()
 
-def z = new pa.fo.Zot()
-z.checkOutFrom(repo)
+def z = new pa.al.Zot()
+z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
 
 node() {
     stage('prepare') {
