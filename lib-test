@@ -12,5 +12,3 @@ node() {
     }
 }
 
-library 'libtest'
-testLog.info("hahah")
