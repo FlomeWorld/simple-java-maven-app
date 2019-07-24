@@ -5,8 +5,6 @@ def a = new pa.al.Point()
 def z = new pa.al.Zot()
 z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
 
-@Library('libtest') _
-
 sayHello 'lili'
 sayHello()
 node() {
