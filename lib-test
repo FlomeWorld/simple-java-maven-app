@@ -8,6 +8,6 @@ z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
 node() {
     stage('prepare') {
         checkout scm
-        info("hahah")
+        testLog.info("hahah")
     }
 }
