@@ -5,6 +5,6 @@ library 'libtest'
 node() {
     stage('prepare') {
         checkout scm
-        libtest.
+        testLog.info("hahah")
     }
 }
