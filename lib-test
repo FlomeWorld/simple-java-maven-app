@@ -1,10 +1,13 @@
 
 library 'libtest'
+def a = new pa.al.Point()
 
+def z = new pa.fo.Zot()
+z.checkOutFrom(repo)
 
 node() {
     stage('prepare') {
         checkout scm
-        testLog.info("hahah")
+        info("hahah")
     }
 }
