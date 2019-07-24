@@ -1,5 +1,5 @@
 
-library 'libtest'
+
 def a = new pa.al.Point()
 
 def z = new pa.al.Zot()
@@ -8,6 +8,9 @@ z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
 node() {
     stage('prepare') {
         checkout scm
-        testLog.info("hahah")
+        
     }
 }
+
+library 'libtest'
+testLog.info("hahah")
