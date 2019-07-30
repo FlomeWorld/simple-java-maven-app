@@ -1,4 +1,2 @@
-@Library('lib') _
-
 binBuild buildTool: 'maven', content: [:]
 
