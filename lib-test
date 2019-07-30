@@ -1,2 +1,3 @@
+@Library('lib@feature-test')
 binBuild buildTool: 'maven', content: [:]
 
