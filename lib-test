@@ -1,23 +1,4 @@
-
-
-def a = new pa.al.Point()
-
-def z = new pa.al.Zot()
-z.checkOutFrom("https://github.com/gundomi/jenkins-lib-test-app.git")
-
-sayHello 'lili'
-sayHello()
-node() {
-    stage('prepare') {
-    
-        checkout scm
-       
-    }
-}
-
-
-
 @Library('libtest') _
 
-evenOrOdd(currentBuild.getNumber())
+binBuild buildTool: 'maven', content: [:]
 
